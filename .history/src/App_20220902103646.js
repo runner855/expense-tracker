@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <h1>Let's get started</h1>
     </div>
   );
 }
