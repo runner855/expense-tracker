@@ -1,11 +1,12 @@
 import React from 'react';
 import '../styles/ExpenseItem.css'
 import ExpenseDate from './ExpenseDate';
+import moment from 'moment';
 
 
 const ExpenseItem = (props) => {
 
-  const { title, amount } = props;
+  const { date, title, amount } = props;
 
 
 

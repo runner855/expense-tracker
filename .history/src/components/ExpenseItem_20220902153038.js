@@ -5,7 +5,7 @@ import ExpenseDate from './ExpenseDate';
 
 const ExpenseItem = (props) => {
 
-  const { title, amount } = props;
+  const { date, title, amount } = props;
 
 
 
