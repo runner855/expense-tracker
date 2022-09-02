@@ -6,19 +6,14 @@ import moment from 'moment';
 const ExpenseItem = (props) => {
 
   const { date, title, amount } = props;
-  const month = moment(date).format(' MMMM')
-  const year = moment(date).format(" YYYY ")
-  const day = moment(date).format('Do')
-
+  let newDate = date;
+  let x = newDate.toISOString()
+  console.log(x)
 
   return (
     <div className='expense-item'>
-      <div>
-        <div>{month}</div>
-        <div>{year}</div>
-        <div>{day}</div>
-
-
+      <div className='expense-item__date'>
+        {`${newDate}`}
       </div>
       <div className='expense-item__description'>
         <h2>{`${title}`}</h2>
